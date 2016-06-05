@@ -6,7 +6,7 @@ python:
   - "3.5-dev" # 3.5 development branch
   - "nightly" # currently points to 3.6-dev
 # command to install dependencies
-install: "pip install -r autho/dev_requirements.txt"
+install: "cd autho && pip install -r dev_requirements.txt"
 # command to run tests
 env:
   - DJANGO_SETTINGS_MODULE=autho.dev_settings
