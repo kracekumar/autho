@@ -23,5 +23,6 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/v1/login/$', csrf_exempt(views.LoginAPIView.as_view())),
+    url(r'^api/v1/login/$', csrf_exempt(views.LoginAPIView.as_view()),
+        name='login-view'),
 ]
