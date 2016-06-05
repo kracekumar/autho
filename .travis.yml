@@ -10,4 +10,4 @@ install: "pip install -r dev_requirements.txt"
 # command to run tests
 env:
   - DJANGO_SETTINGS_MODULE=autho.dev_settings
-script: py.test --verbose
+script: bash test.sh
